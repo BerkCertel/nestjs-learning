@@ -1,0 +1,18 @@
+https://docs.nestjs.com/first-steps
+
+$ npm i -g @nestjs/cli
+$ nest new project-name
+
+
+
+
+https://docs.nestjs.com/techniques/configuration
+npm i --save @nestjs/config
+
+import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
+
+@Module({
+  imports: [ConfigModule.forRoot()],
+})
+export class AppModule {}
