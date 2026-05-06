@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(pnpm add *)",
-      "Bash(pnpm list *)"
+      "Bash(pnpm list *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Asus\\\\Desktop\\\\nestjs-learning\" -File)",
+      "Bash(Select-Object Name)"
     ]
   }
 }
