@@ -59,6 +59,9 @@ imports: [AuthService],  bu sekılde cagırmak gerekıyor gereken yerlerde
 
 
 
+// 
+pnpm add  @nestjs/jwt @nestjs/passport bcrypt passport passport-jwt 
+pnpm add -D @types/passport-jwt @types/passport
 
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';

@@ -1,11 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AvailabilityController } from './availability.controller';
 import { AvailabilityService } from './availability.service';
-import { AuthService } from '../auth/auth.service';
+import { PrismaService } from 'src/prisma.service';
 
 @Module({
   controllers: [AvailabilityController],
-  providers: [AvailabilityService],
-  imports: [AuthService],
+  providers: [AvailabilityService, PrismaService],
 })
 export class AvailabilityModule {}
